@@ -1,0 +1,110 @@
+*{
+    font-family: 'Nunito', sans-serif;
+
+}
+h2{
+    color: rgb(39, 37, 37, 0.8);
+}
+i {
+    border: solid rgb(39, 37, 37, 0.5);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-right: 4px;
+}
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.link{
+    color: rgb(39, 37, 37, 0.5);
+    text-decoration: none;
+    font-size: 15px;
+    cursor: default;
+}
+.links{
+    color: rgb(39, 37, 37, 0.5);
+    text-decoration: none;
+    font-size: 15px;
+
+}
+.links:hover{
+    filter: drop-shadow( 0 1px 10px  rgb(0, 0, 0));
+}
+
+.sup-up{
+    font-size: 13px;
+}
+.product-title {
+    font-size: 30px;
+    margin: 15px 0;
+}
+.product-description {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.product-features {
+    font-size: 19px;
+    margin-bottom: 15px;
+}
+.product-price {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.product-img {
+    text-align: center;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+input{
+    outline: none;
+    outline-offset: 0;  
+  }
+.product-quantity {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: static;
+    input {
+        text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-color:rgba(90, 175, 145, 0.352);
+    color:rgb(48, 99, 81);
+
+   
+    }
+    button{
+        background-color:rgba(90, 175, 145, 0.352);
+        color:rgb(48, 99, 81);
+        
+
+    }
+    
+  
+}
+
+.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled {
+    color:rgb(48, 99, 81);
+    -webkit-text-fill-color: rgb(48, 99, 81);
+}
+
+.css-1t6e9jv-MuiCardActions-root {
+    width: 100%;
+}
+
+.card{
+    box-shadow: 0 1px 10px 0 rgb(48, 99, 81, 0.2);
+    transition: 0.3s;
+}
+.card:hover {
+    box-shadow: 3px 8px 20px 8px rgb(48, 99, 81, 0.2);
+}
+

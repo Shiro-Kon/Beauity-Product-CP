@@ -6,5 +6,7 @@ header{
     height: 70px;
     font-family: 'Nunito', sans-serif;
     color: white;
-    background-color:rgb(63, 124, 103);
+    background:rgb(55, 108, 89);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 20px  0 rgba(0, 0, 0, 0.37);
 }

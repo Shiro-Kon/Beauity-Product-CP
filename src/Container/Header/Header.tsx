@@ -12,16 +12,20 @@ type Props = {};
 
 const Header = (props: Props) => {
   return (
-    <header>
+    
+      <AppBar position="sticky">
+        <header className="galss-effect">
         <Container>
           <Toolbar className="test">
           <Typography  component="div" sx={{ flexGrow: 1 }}>  
           <Logo />
           </Typography>
             <Menu />
+            
           </Toolbar>
         </Container>
-    </header>
+        </header>
+        </AppBar>
   );
 };
 

@@ -1,10 +1,24 @@
+import ProductList from '../../Component/ProductList/ProductList'
+import './Product.scss'
 
-type Props = {}
+type Props = {
+  
+}
 
 const Products = (props: Props) => {
   return (
-    <div>Products</div>
+    <main>
+      <ProductList  />
+    </main>
   )
 }
 
 export default Products
+
+
+
+
+
+
+
+

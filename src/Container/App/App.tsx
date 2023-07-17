@@ -7,6 +7,7 @@ import Homet from '../../pages/Home/Home'
 import Home from '../../pages/Home/Home'
 import Products from '../../pages/Products/Products'
 import Footer from '../Footer/Footer'
+import Blog from '../../pages/Blog/Blog'
 
 type Props = {}
 
@@ -23,6 +24,8 @@ const App = (props: Props) => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/products" element={<Products />} />
+                    <Route path="/blog" element={<Blog />} />
+                    
                 </Routes>
             </Container>
             <Footer/>
