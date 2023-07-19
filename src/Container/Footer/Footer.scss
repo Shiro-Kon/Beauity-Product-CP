@@ -1,11 +1,12 @@
 .footer {
     background-color: rgb(41, 79, 66);
-    padding: 5px 0;
+    padding: 20px 0px;
     display: flex;
     width: 100%;
+    
     flex-direction: column;
-    position: relative;
-    bottom: 0;
+    position:relative;
+    bottom:0px;
 }
   .footer-content {
     display: flex;

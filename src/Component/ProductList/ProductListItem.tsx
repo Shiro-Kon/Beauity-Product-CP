@@ -1,9 +1,9 @@
-import React from 'react';
-import { Button, Card, CardActions, CardContent } from '@mui/material';
-import './ProductListItem.scss';
-import { useState } from 'react';
-import Quantity from '../Quantity/Quantity';
-import ButtonBuy from '../ButtonBuy/ButtonBuy';
+import React from "react";
+import { Button, Card, CardActions, CardContent } from "@mui/material";
+import "./ProductListItem.scss";
+import { useState } from "react";
+import Quantity from "../Quantity/Quantity";
+import ButtonBuy from "../ButtonBuy/ButtonBuy";
 
 type Props = {
   id: number;
@@ -23,7 +23,6 @@ const ProductListItem = ({
   price,
   image,
   sup,
-
 }: Props) => {
   const [count, setCount] = useState<number>(1);
 
@@ -34,8 +33,6 @@ const ProductListItem = ({
     setCount((prevState) => prevState - 1);
   };
 
- 
-
   return (
     <Card className="product card" variant="outlined">
       <CardContent>
@@ -43,16 +40,21 @@ const ProductListItem = ({
           <img src={image} alt="" />
         </div>
         <h4 className="product-title">{title}</h4>
-        <div className="product-description">{description}</div>
-        <div className="product-features">Type: {type}</div>
-        <div className="product-price">$ {price}.<sup className='sup-up'>{sup}</sup></div>
+        <div className="text-family">
+          <div className="product-description">{description}</div>
+          <div className="product-features">Type: {type}</div>
+          <div className="product-price">
+            $ {price}.<sup className="sup-up">{sup}</sup>
+          </div>
+        </div>
+
         <Quantity
           count={count}
           onDecrementClick={onDecrementClick}
           onIncrementClick={onIncrementClick}
           minCount={1}
         />
-          <ButtonBuy />
+        <ButtonBuy />
       </CardContent>
     </Card>
   );

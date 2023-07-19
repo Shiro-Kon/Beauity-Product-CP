@@ -6,6 +6,7 @@ type Props = {
   title: string;
   time: string;
   image: string;
+  author: string;
 };
 
 const BlogListItem = ({
@@ -13,6 +14,7 @@ const BlogListItem = ({
   title,
   time,
   image,
+  author,
 
 }: Props) => {
  
@@ -22,11 +24,11 @@ const BlogListItem = ({
   return (
     <Card className="blog card"  variant="outlined">
       <CardContent>
-        <div className="product-img">
+        <div className="blog-img">
           <img src={image} alt="" />
         </div>
-        <h4 className="blog-time">{time}</h4>
-        <div className="blog-description">{title}</div>
+        <h4 className="blog-time"><a className='td-none author' href="#">{author}</a>{time}</h4>
+        <a href='#' className="blog-description td-none">{title}</a>
        
       </CardContent>
     </Card>

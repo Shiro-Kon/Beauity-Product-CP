@@ -21,20 +21,22 @@ const BlogList = (props: Props) => {
 
                     </h2>
             </Typography>
-            <Grid container spacing={4}>
+            <Grid container  columnSpacing={35}  spacing={2} style={{marginLeft:"-410px"}}>
                 {BlogArr.map(
                     ({
                         id,
                         title,
                         time,
                         image,
+                        author,
                     }) => (
-                        <Grid item xs={12} sm={2} md={6} key={id}>
-                            <BlogListItem
+                        <Grid item xs={5} sm={4} md={6}  key={id}>
+                            <BlogListItem 
                                 id={id}
                                 title={title}
                                 time={time}
                                 image={image}
+                                author={author}
                             />
                         </Grid>
                     )

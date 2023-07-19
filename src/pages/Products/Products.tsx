@@ -1,6 +1,5 @@
-import ProductList from '../../Component/ProductList/ProductList'
-import './Product.scss'
-
+import ProductList from "../../Component/ProductList/ProductList"
+import './Products.scss'
 type Props = {
   
 }
