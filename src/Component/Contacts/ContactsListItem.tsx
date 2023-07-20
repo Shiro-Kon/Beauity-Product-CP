@@ -33,12 +33,12 @@ const ContatcsListItem = ({
         </div>
         <div className="title-local">{title}</div>
         <div className="adress">
-            {location}
-            {victoria}
-            {country}
+          <p>{location}</p>
+          <p>{victoria}</p>
+          <p>{country}</p>
         </div>
         <div className="map-check">
-            {check}
+           <a href="#">{check}</a>
         </div>
         
        

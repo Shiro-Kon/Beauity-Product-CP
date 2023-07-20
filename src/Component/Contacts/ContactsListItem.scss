@@ -2,6 +2,15 @@
     font-family: 'Nunito', sans-serif;
 
 }
+.h1-message{
+    font-size: 60px;
+}
+.h1-meet{
+    font-size: 40px;
+}
+.p-message{
+margin-bottom: 30px;
+}
 .contacts-img{
     text-align: center;
     img {
@@ -9,6 +18,29 @@
         height: auto;
     }
 }
+.title-local{
+    font-size: 40px;
+    text-align: center;
+    cursor: default;
+}
+.adress{
+    margin-top: 15px;
+}
+.map-check{
+    margin-top: 20px;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.547);
 
+    }
+}
+.consultant-data{
+    padding-top: 25px;
+
+}
+.consultant-h3{
+    margin-bottom: 15px;
+}
 
 

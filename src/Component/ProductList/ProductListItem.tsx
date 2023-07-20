@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, CardActions, CardContent } from "@mui/material";
+import { Box, Card, CardContent, Rating, Typography } from "@mui/material";
 import "./ProductListItem.scss";
 import { useState } from "react";
 import Quantity from "../Quantity/Quantity";
@@ -25,10 +25,12 @@ const ProductListItem = ({
   sup,
 }: Props) => {
   const [count, setCount] = useState<number>(1);
+  const [value, setValue] = useState<number | null>(2);
 
   const onIncrementClick = () => {
     setCount((prevState) => prevState + 1);
   };
+
   const onDecrementClick = () => {
     setCount((prevState) => prevState - 1);
   };
@@ -43,6 +45,15 @@ const ProductListItem = ({
         <div className="text-family">
           <div className="product-description">{description}</div>
           <div className="product-features">Type: {type}</div>
+          <Box sx={{ '& > legend': { mt: 2 } }}>
+            <Rating
+              name="simple-controlled"
+              value={value}
+              onChange={(event, newValue) => {
+                setValue(newValue);
+              }}
+            />
+          </Box>
           <div className="product-price">
             $ {price}.<sup className="sup-up">{sup}</sup>
           </div>
