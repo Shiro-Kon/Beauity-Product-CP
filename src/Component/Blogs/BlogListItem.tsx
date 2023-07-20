@@ -1,5 +1,6 @@
 import {  Card,  CardContent } from '@mui/material';
 import './BlogListItem.scss'
+import { Link } from 'react-router-dom';
 
 type Props = {
   id: number;
@@ -25,10 +26,11 @@ const BlogListItem = ({
     <Card className="blog card"  variant="outlined">
       <CardContent>
         <div className="blog-img">
-          <img src={image} alt="" />
+        <Link to={`/blog/${id}`}><img src={image} alt="" /></Link>
+          
         </div>
         <h4 className="blog-time"><a className='td-none author' href="#">{author}</a>{time}</h4>
-        <a href='#' className="blog-description td-none">{title}</a>
+        <Link to={`/blog/${id}`} className="blog-description td-none">{title}</Link>
        
       </CardContent>
     </Card>

@@ -9,6 +9,7 @@ import Products from '../../pages/Products/Products'
 import Footer from '../Footer/Footer'
 import Blog from '../../pages/Blog/Blog'
 import Contacts from '../../pages/Contacts/Contacts'
+import BlogDetailsPage from '../../Component/Blogs/BlogDetailsPage'
 
 type Props = {}
 
@@ -27,6 +28,7 @@ const App = (props: Props) => {
                     <Route path="/" element={<Home />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/blog" element={<Blog />} />
+                    <Route path="/blog/:blogId" element={<BlogDetailsPage/>} />
                     <Route path="/contacts" element={<Contacts />} />
                 </Routes>
             </Container>
