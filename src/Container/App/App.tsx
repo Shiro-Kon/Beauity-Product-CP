@@ -3,13 +3,14 @@ import { StyledEngineProvider } from '@mui/material/styles'
 import { Route, Routes } from 'react-router-dom'
 import { Container } from '@mui/material'
 import Header from '../Header/Header'
-import Homet from '../../pages/Home/Home'
-import Home from '../../pages/Home/Home'
+import Homet from '../../pages/Home/HomePage'
+import Home from '../../pages/Home/HomePage'
 import Products from '../../pages/Products/Products'
 import Footer from '../Footer/Footer'
 import Blog from '../../pages/Blog/Blog'
 import Contacts from '../../pages/Contacts/Contacts'
-import BlogDetailsPage from '../../Component/Blogs/BlogDetailsPage'
+import BlogDetailsPage from '../../Component/Blogs/BlogDetailsPage/BlogDetailsPage'
+import HomePage from '../../pages/Home/HomePage'
 
 type Props = {}
 
@@ -25,7 +26,7 @@ const App = (props: Props) => {
             >
                 
                 <Routes>
-                    <Route path="/" element={<Home />} />
+                    <Route path="/" element={<HomePage />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/blog/:blogId" element={<BlogDetailsPage/>} />
