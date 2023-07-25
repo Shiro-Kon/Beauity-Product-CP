@@ -7,7 +7,7 @@
     image: string
     sup: number
 }
-const ProductsArray: Product[] = [
+const ProductsArr: Product[] = [
     {
         id: 1,
         title: 'Beauty Oil',
@@ -99,4 +99,4 @@ export const getProductsObject = (array: Product[]) =>
         {}
     )
 
-export default ProductsArray
+export default ProductsArr
