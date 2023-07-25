@@ -11,6 +11,7 @@ import Blog from '../../pages/Blog/Blog'
 import Contacts from '../../pages/Contacts/Contacts'
 import BlogDetailsPage from '../../Component/Blogs/BlogDetailsPage/BlogDetailsPage'
 import HomePage from '../../pages/Home/HomePage'
+import Basket from '../../pages/Basket/Basket'
 
 type Props = {}
 
@@ -31,6 +32,7 @@ const App = (props: Props) => {
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/blog/:blogId" element={<BlogDetailsPage/>} />
                     <Route path="/contacts" element={<Contacts />} />
+                    <Route path='/basket' element={<Basket/>}/>
                 </Routes>
             </Container>
             <Footer/>

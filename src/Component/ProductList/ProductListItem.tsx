@@ -41,7 +41,7 @@ const ProductListItem = ({
         <div className="product-img">
           <img src={image} alt="" />
         </div>
-        <h4 className="product-title">{title}</h4>
+        <h4 className="product-title">{title} </h4>
         <div className="text-family">
           <div className="product-description">{description}</div>
           <div className="product-features">Type: {type}</div>
