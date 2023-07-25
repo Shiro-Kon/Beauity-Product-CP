@@ -37,17 +37,9 @@ const BlogDetailsPage = () => {
         >
           <h2 >
             {selectedBlog.title}
-            <p className="link">
-            <a className="links" href="/blog">
-                Blog
-                </a>
-         
-              <i className="arrow right"></i>{" "}
-              <a className="links" href="/blog">
-                {selectedBlog.title}
-              </a>
-            </p>
+            
           </h2>
+          
         </Typography>
       </div>
       <div className="blog-datails">

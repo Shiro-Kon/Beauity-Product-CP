@@ -32,7 +32,7 @@ const ContactsList = (props: Props) => {
               Home
             </a>{" "}
             <i className="arrow right"></i>{" "}
-            <a className="links" href="/contact">
+            <a className="links" href="/contacts">
               Contacts
             </a>
           </p>

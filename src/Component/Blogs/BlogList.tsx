@@ -17,7 +17,7 @@ const BlogList = (props: Props) => {
             >
                 <h2>
                     Blog
-                    <p className='link'><a  className='links' href="/">Home</a> <i className="arrow right"></i>  <a className='links' href="/blog">Products</a></p>
+                    <p className='link'><a  className='links' href="/">Home</a> <i className="arrow right"></i>  <a className='links' href="/blog">Blog</a></p>
 
                     </h2>
             </Typography>
