@@ -1,13 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination } from "swiper";
+import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import BlogArr from "../../utils/BlogArr";
 import "./Swiper.scss";
 
-SwiperCore.use([Navigation, Pagination]);
+SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const BlogSwiper: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
@@ -25,16 +25,16 @@ const BlogSwiper: React.FC = () => {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
       },
-
       pagination: {
-        el: ".swiper-pagination", 
-        type: "bullets", 
+        el: ".swiper-pagination",
+        type: "bullets",
         clickable: true,
       },
-      freeMode: true,
-      freeModeMinimumVelocity: 10,
-      freeModeMomentum: false,
-      freeModeSticky: true,
+      allowTouchMove: false, // Disable swiping with touch/mouse
+      autoplay: {
+        delay: 3000, // Set the delay between autoplay slides (in ms)
+        disableOnInteraction: false, // Autoplay will continue after user interactions
+      },
       on: {
         slideChange: (swiper) => {
           handleSlideChange(swiper);
@@ -50,7 +50,14 @@ const BlogSwiper: React.FC = () => {
           {BlogArr.map((blog) => (
             <SwiperSlide key={blog.id}>
               <div className="box-swiper">
-                <img className="img-swiper" src={blog.image} alt={blog.title} />
+                <a href="/blog">
+                  {" "}
+                  <img
+                    className="img-swiper"
+                    src={blog.image}
+                    alt={blog.title}
+                  />
+                </a>
                 <h3 className="title-swiper">{blog.title}</h3>
               </div>
             </SwiperSlide>
