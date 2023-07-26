@@ -4,7 +4,7 @@ import './Logo.scss';
 const Logo = () => {
   return (
     <div className="header-logo">
-      <span className="text-logo">Beauty Products</span>
+      <a href="/"><span className="text-logo">Beauty Products</span></a>
     </div>
   );
 };

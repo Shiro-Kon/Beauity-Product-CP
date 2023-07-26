@@ -110,4 +110,31 @@ input{
 .card:hover {
     box-shadow: 3px 8px 20px 8px rgb(48, 99, 81, 0.2);
 }
+.btn-filter{
+    text-align: center;
+    width: 10%;
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(48, 99, 81);
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.btn-filter:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+    
+}
+.btn-filter:active{
+    background-color: rgb(68, 145, 118);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    transition: all 0.1s ease-in-out;
 
+}
