@@ -1,5 +1,5 @@
 // BlogDetailsPage.tsx
-import { Link, useParams } from "react-router-dom";
+import { Link, Router, useParams } from "react-router-dom";
 import BlogArr from "../../../utils/BlogArr";
 import {
   Box,

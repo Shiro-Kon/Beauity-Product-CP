@@ -1,21 +1,24 @@
 import { Box, Card, CardContent, Container, Grid, Typography } from "@mui/material";
 import "./Home.scss";
 import HomeProductList from "./HomeProductList";
-import { Link } from "react-router-dom";
+import BlogSwiper from "../Swiper/Swiper";
 
 type Props = {};
 
+
+
 const Home = (props: Props) => {
+ 
   return (
     <>
-      <div className="slider-wrapper"><div className="shimmer-text">Slayder</div> </div>
-
+    <BlogSwiper/>
       <Grid
         sx={{
           width: "1400px",
           height: "700px",
           marginLeft: "-130px",
-          marginBottom: "-130px",
+          marginBottom: "-120px",
+          marginTop: "50px",
         }}
         container
         spacing={2}
