@@ -3,8 +3,6 @@ import { StyledEngineProvider } from '@mui/material/styles'
 import { Route, Routes } from 'react-router-dom'
 import { Container } from '@mui/material'
 import Header from '../Header/Header'
-import Homet from '../../pages/Home/HomePage'
-import Home from '../../pages/Home/HomePage'
 import Products from '../../pages/Products/Products'
 import Footer from '../Footer/Footer'
 import Blog from '../../pages/Blog/Blog'
@@ -20,6 +18,7 @@ const App = (props: Props) => {
     <StyledEngineProvider injectFirst>
             <CssBaseline />
             <Header />
+            
             <Container
                 sx={{
                     padding: '40px 0',
@@ -27,6 +26,7 @@ const App = (props: Props) => {
             >
                 
                 <Routes>
+                
                     <Route path="/" element={<HomePage />} />
                     <Route path="/products" element={<Products />} />
                     <Route path="/blog" element={<Blog />} />
