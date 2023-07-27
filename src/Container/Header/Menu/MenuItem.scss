@@ -4,16 +4,25 @@
     color: white;
     font-size: 21px;
     opacity: 0.7;
-    transition: opacity 0.3s ease;
+    transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
+.menu-item:hover{
+  transform: translateY(-3px);
+}
+.menu-item:active{
+  transform: translateY(2px);
+  transition: all 0.1s ease-in-out;
 }
 .menu-item-active {
     font-size: 21px;
     cursor: pointer;
     text-decoration: none;
     color: white;
+    
     opacity: 1;
 }
+
 
 .favorite{
   display: flex;

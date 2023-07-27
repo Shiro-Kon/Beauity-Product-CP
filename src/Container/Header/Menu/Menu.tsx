@@ -1,9 +1,11 @@
 import { Typography } from "@mui/material";
 import MenuItem from "./MenuItem";
 
-type Props = {};
+type Props = {productsInCart: {
+  [id: number]: number
+}};
 
-const Menu = (props: Props) => {
+const Menu = ({ productsInCart }: Props) => {
   return (
     <>
       <MenuItem to="/">Home</MenuItem>
@@ -17,7 +19,19 @@ const Menu = (props: Props) => {
           </MenuItem>
           <MenuItem to="/basket">
             <img src="./images/basket.png" className="basket" />
+            <span className="quantity-in-basket">
+                                            {''}
+                                            {Object.keys(productsInCart).reduce(
+                                                (count, productId) =>
+                                                    count +
+                                                    productsInCart[
+                                                        parseInt(productId)
+                                                    ],
+                                                0
+                                            )}
+                                        </span>
           </MenuItem>
+          
         </div>
     </>
   );

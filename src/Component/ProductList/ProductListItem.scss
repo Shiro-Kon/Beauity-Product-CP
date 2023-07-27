@@ -2,6 +2,7 @@
     font-family: 'Nunito', sans-serif;
 
 }
+
 h2{
     color: rgb(39, 37, 37, 0.8);
 }
@@ -30,6 +31,10 @@ i {
 }
 .links:hover{
     filter: drop-shadow( 0 1px 10px  rgb(0, 0, 0));
+}
+
+.product{
+    border-radius: 20px;
 }
 
 .sup-up{
@@ -71,37 +76,7 @@ input{
     outline: none;
     outline-offset: 0;  
   }
-.product-quantity {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    position: static;
-    input {
-        text-align: center;
-    font-family: 'Nunito', sans-serif;
-    background-color:rgba(90, 175, 145, 0.352);
-    color:rgb(48, 99, 81);
 
-   
-    }
-    button{
-        background-color:rgba(90, 175, 145, 0.352);
-        color:rgb(48, 99, 81);
-        
-
-    }
-    
-  
-}
-
-.css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input.Mui-disabled {
-    color:rgb(48, 99, 81);
-    -webkit-text-fill-color: rgb(48, 99, 81);
-}
-
-.css-1t6e9jv-MuiCardActions-root {
-    width: 100%;
-}
 
 .card{
     box-shadow: 0 1px 10px 0 rgb(48, 99, 81, 0.2);
@@ -138,3 +113,25 @@ input{
     transition: all 0.1s ease-in-out;
 
 }
+.buy-btn{
+    text-align: center;
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(48, 99, 81);
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.buy-btn:hover{ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);}
+.buy-btn:active{  background-color: rgb(68, 145, 118);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    transition: all 0.1s ease-in-out;}

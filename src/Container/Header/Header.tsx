@@ -8,9 +8,11 @@ import Typography from "@mui/material/Typography";
 
 
 
-type Props = {};
+type Props = {productsInCart: {
+  [id: number]: number
+}};
 
-const Header = (props: Props) => {
+const Header = ({ productsInCart }: Props) => {
   return (
     
       <AppBar position="sticky">
@@ -20,7 +22,7 @@ const Header = (props: Props) => {
           <Typography  component="div" sx={{ flexGrow: 1 }}>  
           <Logo />
           </Typography>
-            <Menu />
+            <Menu productsInCart={productsInCart} />
             
           </Toolbar>
         </Container>

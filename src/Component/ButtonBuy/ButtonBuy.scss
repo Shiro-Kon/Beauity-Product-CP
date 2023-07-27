@@ -10,18 +10,22 @@
     justify-content: center;
     align-items: center;
     transition: background-color 0.90s ease;
-    transition: transform 0.5s;
+    transition: all 0.4s ease-in-out;
 }
 
 .buy:hover{
-    transition: background-color 0.30s ease;
-    background-color: rgba(68, 131, 109, 0.1); 
+    
+    background-color: rgba(68, 131, 109, 0.301); 
     border: 1px solid rgba(68, 131, 109, 0.8);
     color: rgba(68, 131, 109, 0.8);
+    transform: translateY(-3px);
+    transition: all 0.2s ease-in-out;
+
     
   
 }
 .buy:active {
-    transform: scale(0.95);
-    transition: transform 0.16s;
+    transform: translateY(2px);
+    transform: scale(0.9);
+    transition: all 0.1s ease-in-out;
   }

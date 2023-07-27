@@ -3,7 +3,6 @@ import { Box, Card, CardContent, Rating, Typography } from "@mui/material";
 import "./ProductListItem.scss";
 import { useState } from "react";
 import Quantity from "../Quantity/Quantity";
-import ButtonBuy from "../ButtonBuy/ButtonBuy";
 
 type Props = {
   id: number;
@@ -13,6 +12,8 @@ type Props = {
   price: number;
   image: string;
   sup: number;
+  addProductToCart: (id: number, count: number) => void
+
 };
 
 const ProductListItem = ({
@@ -23,9 +24,11 @@ const ProductListItem = ({
   price,
   image,
   sup,
+  addProductToCart,
+
 }: Props) => {
   const [count, setCount] = useState<number>(1);
-  const [value, setValue] = useState<number | null>(2);
+  const [value, setValue] = useState<number | null>(4);
 
   const onIncrementClick = () => {
     setCount((prevState) => prevState + 1);
@@ -65,7 +68,8 @@ const ProductListItem = ({
           onIncrementClick={onIncrementClick}
           minCount={1}
         />
-        <ButtonBuy />
+      
+    <input type="button" className="buy-btn" value="Buy"  onClick={() => addProductToCart(id, count)}/>
       </CardContent>
     </Card>
   );

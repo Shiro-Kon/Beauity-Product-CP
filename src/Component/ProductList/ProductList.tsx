@@ -3,9 +3,9 @@ import { Grid, Typography, Button } from "@mui/material";
 import ProductListItem from "./ProductListItem";
 import ProductsArr from "../../utils/ProductArr";
 
-type Props = {};
+type Props = {addProductToCart: (id: number, count: number) => void};
 
-const ProductList = (props: Props) => {
+const ProductList = ({ addProductToCart }: Props) => {
   const [selectedType, setSelectedType] = useState<string | null>(null);
 
   const handleFilterClick = (type: string | null) => {
@@ -82,6 +82,7 @@ const ProductList = (props: Props) => {
                 price={price}
                 image={image}
                 sup={sup}
+                addProductToCart={addProductToCart}
               />
             </Grid>
           )
