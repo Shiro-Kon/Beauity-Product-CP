@@ -5,7 +5,7 @@ import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import BlogArr from "../../utils/BlogArr";
-import "./Swiper.scss";
+import "./BlogSwiper.scss";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 

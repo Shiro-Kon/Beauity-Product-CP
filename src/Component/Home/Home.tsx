@@ -1,7 +1,7 @@
 import { Box, Card, CardContent, Container, Grid, Typography } from "@mui/material";
 import "./Home.scss";
 import HomeProductList from "./HomeProductList";
-import BlogSwiper from "../Swiper/Swiper";
+import BlogSwiper from "../Swiper/BlogSwiper";
 
 type Props = {};
 
