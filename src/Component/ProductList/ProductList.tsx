@@ -72,7 +72,7 @@ const ProductList = ({ addProductToCart }: Props) => {
 
       <Grid container spacing={4}>
         {filteredProducts.map(
-          ({ id, title, description, type, price, image, sup }) => (
+          ({ id, title, description, type, price, image }) => (
             <Grid item xs={12} sm={6} md={4} key={id}>
               <ProductListItem
                 id={id}
@@ -81,7 +81,6 @@ const ProductList = ({ addProductToCart }: Props) => {
                 type={type}
                 price={price}
                 image={image}
-                sup={sup}
                 addProductToCart={addProductToCart}
               />
             </Grid>

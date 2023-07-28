@@ -7,7 +7,6 @@ type Props = {
   title: string;
   price: number;
   image: string;
-  sup: number;
 };
 
 const HomeProductListItem = ({
@@ -15,7 +14,6 @@ const HomeProductListItem = ({
   title,
   price,
   image,
-  sup,
 }: Props) => {
   const [count, setCount] = useState<number>(1);
   const [value, setValue] = useState<number | null>(2);
@@ -41,7 +39,7 @@ const HomeProductListItem = ({
             />
           </Box>
           <div className="product-price">
-            $ {price}.<sup className="sup-up">{sup}</sup>
+            {price}$
           </div>
         </div>
 

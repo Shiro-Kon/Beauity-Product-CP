@@ -1,4 +1,3 @@
-import { Typography } from "@mui/material";
 import MenuItem from "./MenuItem";
 
 type Props = {productsInCart: {
@@ -19,7 +18,9 @@ const Menu = ({ productsInCart }: Props) => {
           </MenuItem>
           <MenuItem to="/basket">
             <img src="./images/basket.png" className="basket" />
-            <span className="quantity-in-basket">
+            
+          </MenuItem>
+          <span className="quantity-in-basket">
                                             {''}
                                             {Object.keys(productsInCart).reduce(
                                                 (count, productId) =>
@@ -30,7 +31,6 @@ const Menu = ({ productsInCart }: Props) => {
                                                 0
                                             )}
                                         </span>
-          </MenuItem>
           
         </div>
     </>

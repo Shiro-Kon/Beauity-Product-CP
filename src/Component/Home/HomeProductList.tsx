@@ -15,7 +15,6 @@ const HomeProductList = (props: Props) => {
                         
                         price,
                         image,
-                        sup,
                     }) => (
                         <Grid item xs={12} sm={6} md={3} key={id}>
                             <a href="/products"><HomeProductListItem
@@ -23,7 +22,6 @@ const HomeProductList = (props: Props) => {
                                 title={title}
                                 price={price}
                                 image={image}
-                                sup={sup}
                             /></a>
                             
                         </Grid>

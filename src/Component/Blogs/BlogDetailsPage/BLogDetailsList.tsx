@@ -8,7 +8,7 @@ const BlogDetailsList = (props: Props) => {
     return (
         <>
             
-            <Grid container  spacing={2} style={{}}    >
+            <Grid container  spacing={2} sx={{marginLeft: "1px"}}    >
                 {BlogDetalsArr.map(
                     ({
                         id,

@@ -37,9 +37,7 @@ i {
     border-radius: 20px;
 }
 
-.sup-up{
-    font-size: 13px;
-}
+
 .product-title {
     font-size: 30px;
     margin: 15px 0;
@@ -115,7 +113,7 @@ input{
 }
 .buy-btn{
     text-align: center;
-    width: 200px;
+    width: 300px;
     padding: 10px;
     margin-top: 10px;
     font-size: 20px;
@@ -135,3 +133,30 @@ input{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
     transition: all 0.1s ease-in-out;}
+
+///////////////////////////////////////////////
+.delete-btn{
+    text-align: center;
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    color: whitesmoke;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(48, 99, 81);
+    outline: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.delete-btn:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+.delete-btn:active{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    transition: all 0.1s ease-in-out;
+}

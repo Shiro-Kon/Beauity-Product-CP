@@ -11,7 +11,6 @@ type Props = {
   type: string;
   price: number;
   image: string;
-  sup: number;
   addProductToCart: (id: number, count: number) => void
 
 };
@@ -23,7 +22,6 @@ const ProductListItem = ({
   type,
   price,
   image,
-  sup,
   addProductToCart,
 
 }: Props) => {
@@ -58,7 +56,7 @@ const ProductListItem = ({
             />
           </Box>
           <div className="product-price">
-            $ {price}.<sup className="sup-up">{sup}</sup>
+          {price}$
           </div>
         </div>
 

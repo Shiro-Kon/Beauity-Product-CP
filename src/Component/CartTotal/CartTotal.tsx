@@ -1,4 +1,5 @@
 import ProductsArr, { Product, getProductsObject } from "../../utils/ProductArr"
+import "./CartTotal.scss"
 
 type Props = {
     productsInCart: {
@@ -14,8 +15,8 @@ const CartTotal = ({
     productsObject = getProductsObject(ProductsArr),
 }: Props) => {
     return (
-        <div>
-            Total: ${' '}
+        <div className="total">
+            Total: 
             {Object.keys(productsInCart).reduce(
                 (total, productId) =>
                     total +
