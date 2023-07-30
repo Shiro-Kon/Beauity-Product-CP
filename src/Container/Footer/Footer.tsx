@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 type Props = {};
@@ -16,18 +17,18 @@ const Footer = (props: Props) => {
         <div className="footer-section ">
           <h3>Shortcut links</h3>
           <p className="text-footer">
-            <a className="text-footer" href="/">
+            <Link className="text-footer" to={"/"}>
               Home
-            </a>
+            </Link>
           </p>
           <p className="text-footer">
-            <a href="/products">Products</a>
+            <Link to={"/products"}>Products</Link>
           </p>
           <p className="text-footer">
-            <a href="/blog">Blog</a>
+            <Link to={"/blog"}>Blog</Link>
           </p>
           <p className="text-footer">
-            <a href="/contacs">Contacts</a>
+            <Link to={"/contacs"}>Contacts</Link>
           </p>
         </div>
         <div className="footer-section">
