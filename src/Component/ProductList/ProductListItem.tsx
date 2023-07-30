@@ -41,13 +41,13 @@ const ProductListItem = ({
   const dispath = useAppDispatch();
 
   const FavoriteFun = () => {
-    {
+    
       isFavorite
         ? dispath(removeProductFromFavorite({ id, status }))
         : dispath(addProductToFavorite({ id, status }));
  
       isFavorite ? dispath(FavoriteDecrement()) : dispath(FavoriteIncrement());
-    }
+    
   };
 
   const onIncrementClick = () => {
@@ -62,7 +62,7 @@ const ProductListItem = ({
     <Card className="product card" variant="outlined">
       <CardContent>
         <div className="product-img">
-          <img src={image} alt="" />
+          <img src={image} alt={title} />
         </div>
         <h4 className="product-title">{title} </h4>
         <div className="text-family">

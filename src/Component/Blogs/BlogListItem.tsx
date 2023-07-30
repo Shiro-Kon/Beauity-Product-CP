@@ -29,7 +29,7 @@ const BlogListItem = ({
         <Link to={`/blog/${id}`}><img src={image} alt="" /></Link>
           
         </div>
-        <h4 className="blog-time"><a className='td-none author' href="#">{author}</a>{time}</h4>
+        <h4 className="blog-time"><span className='td-none author' >{author}</span>{time}</h4>
         <Link to={`/blog/${id}`} className="blog-description td-none">{title}</Link>
        
       </CardContent>
