@@ -27,11 +27,12 @@ i {
     color: rgb(39, 37, 37, 0.5);
     text-decoration: none;
     font-size: 15px;
+    transition: all 0.3s ease-in-out;
+    
 
 }
 .links:hover{
-    filter: drop-shadow( 0 1px 10px  rgb(0, 0, 0));
-}
+    transform: translateY(-3px);}
 
 .product{
     border-radius: 20px;
@@ -113,7 +114,7 @@ input{
 }
 .buy-btn{
     text-align: center;
-    width: 300px;
+    width: 250px;
     padding: 10px;
     margin-top: 10px;
     font-size: 20px;
@@ -133,7 +134,49 @@ input{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transform: translateY(2px);
     transition: all 0.1s ease-in-out;}
+//////////////////////////////////////////////////
+.product-favorite-btn{   
+    width: 40px;
+    height: 40px;
+    margin-top: 14px;
+text-align: center;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.product-favorite-btn:hover{
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+.product-favorite-btn:active{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    transition: all 0.1s ease-in-out;
+}
 
+.favorite-active{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color:brown;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+.favorite-passive{
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color:rgba(165, 42, 42, 0.484);
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+
+}
 ///////////////////////////////////////////////
 .delete-btn{
     text-align: center;
@@ -160,3 +203,5 @@ input{
     transform: translateY(2px);
     transition: all 0.1s ease-in-out;
 }
+/////////////////////////////////////////////////
+

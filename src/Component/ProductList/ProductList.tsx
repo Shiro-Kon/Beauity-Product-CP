@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Grid, Typography, Button } from "@mui/material";
 import ProductListItem from "./ProductListItem";
 import ProductsArr from "../../utils/ProductArr";
+import { Link } from "react-router-dom";
 
 type Props = {addProductToCart: (id: number, count: number) => void};
 
@@ -12,7 +13,6 @@ const ProductList = ({ addProductToCart }: Props) => {
     setSelectedType(type);
   };
 
-  // Filter products based on the selected type
   const filteredProducts = selectedType
     ? ProductsArr.filter((product) => product.type === selectedType)
     : ProductsArr;
@@ -30,13 +30,13 @@ const ProductList = ({ addProductToCart }: Props) => {
         <h2>
           Shop
           <p className="link">
-            <a className="links" href="/">
+            <Link className="links" to={`/`}>
               Home
-            </a>{" "}
-            <i className="arrow right"></i>{" "}
-            <a className="links" href="/products">
+            </Link>{" "}
+            <i className="arrow right"></i>
+            <Link className="links" to={`/products`}>
               Products
-            </a>
+            </Link>
           </p>
         </h2>
       </Typography>

@@ -2,6 +2,7 @@ import { Box, Card, CardContent, Container, Grid, Typography } from "@mui/materi
 import "./Home.scss";
 import HomeProductList from "./HomeProductList";
 import BlogSwiper from "../Swiper/BlogSwiper";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -36,9 +37,9 @@ const Home = (props: Props) => {
                 <div className=" text-box">
                   10 quick tips for cosmetics care
                 </div>
-                <a href="">
+                <Link to={`/`}>
                   <button className="btn-box text-btn">See More</button>
-                </a>
+                </Link>
               </div>
             </CardContent>
           </Card>
@@ -54,9 +55,9 @@ const Home = (props: Props) => {
                   alt=""
                 />
                 <div className=" text-box-2">Get our latest products</div>
-                <a href="">
+                <Link to={`/`}>
                   <button className="btn-box-2 text-btn">See More</button>
-                </a>
+                </Link>
               </div>
             </CardContent>
           </Card>
@@ -127,9 +128,9 @@ const Home = (props: Props) => {
             </Card>
           </Grid>
         </Grid>
-        <a href="#">
+        <Link to={`/`}>
           <button className="btn-box-3 text-btn">See More</button>
-        </a>
+        </Link>
       </Container>
       <Container>
         <h1 className="h1-home-product">

@@ -12,6 +12,7 @@ import HomePage from '../../pages/Home/HomePage'
 import Basket from '../../pages/Basket/Basket'
 import { createContext, useState } from 'react'
 import { omit } from 'lodash'
+import FavoritePage from '../../pages/Favorite/FavoritePage'
 
 type ProductsInCart = {
     [id: number]: number
@@ -72,6 +73,7 @@ const App = () => {
                     <Route path="/blog" element={<Blog />} />
                     <Route path="/blog/:blogId" element={<BlogDetailsPage/>} />
                     <Route path="/contacts" element={<Contacts />} />
+                    <Route path="/favorite" element={<FavoritePage  />} />
                     <Route path='/basket' element={<Basket productsInCart={productsInCart}/>}/>
                 </Routes>
             </Container>

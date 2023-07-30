@@ -21,8 +21,8 @@ const Header = ({ productsInCart }: Props) => {
           <Toolbar className="test">
           <Typography  component="div" sx={{ flexGrow: 1 }}>  
           <Logo />
-          </Typography>
-            <Menu productsInCart={productsInCart} />
+          </Typography >
+            <Menu  productsInCart={productsInCart} />
             
           </Toolbar>
         </Container>

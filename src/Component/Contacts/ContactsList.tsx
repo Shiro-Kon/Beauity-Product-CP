@@ -4,13 +4,12 @@ import {
   Button,
   Grid,
   InputAdornment,
-  Paper,
   TextField,
   Typography,
-  styled,
 } from "@mui/material";
 import ContactsListItem from "./ContactsListItem";
 import ContactsArr from "../../utils/ContactsArr";
+import { Link } from "react-router-dom";
 
 type Props = {};
 
@@ -28,13 +27,13 @@ const ContactsList = (props: Props) => {
         <h2>
           Contacts
           <p className="link">
-            <a className="links" href="/">
+            <Link className="links" to={`/`}>
               Home
-            </a>{" "}
-            <i className="arrow right"></i>{" "}
-            <a className="links" href="/contacts">
+            </Link>
+            <i className="arrow right"></i>
+            <Link className="links" to={`/contacts`}>
               Contacts
-            </a>
+            </Link>
           </p>
         </h2>
       </Typography>

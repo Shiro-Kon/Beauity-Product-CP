@@ -8,7 +8,7 @@ type Props = {
 }
 const MenuItem = ({ to, children }: Props) => {
     return (
-        <Button color="inherit">
+        <Button  color="inherit">
             <NavLink
                 to={to}
                 className={({ isActive }) =>

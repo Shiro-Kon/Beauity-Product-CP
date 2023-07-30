@@ -70,6 +70,22 @@ a{
     transform: scale(1);
     transition: 0.3s;
     color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-box:hover{
+    background-color: rgba(68, 131, 109, 0.8);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+.btn-box:active{
+    background-color: rgb(68, 145, 118);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    transition: all 0.1s ease-in-out;
 }
 .btn-box-2{
     display: flex;
@@ -85,16 +101,21 @@ a{
     transform: scale(1);
     transition: 0.3s;
     color: black;
-}
-.btn-box:hover{
-    background-color: rgba(68, 131, 109, 0.8);
-    color: white;
-    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .btn-box-2:hover{
     background-color: rgba(68, 131, 109, 0.8);
     color: white;
-    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+.btn-box-2:active{
+    background-color: rgb(68, 145, 118);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    transition: all 0.1s ease-in-out;
 }
 
 .text-btn{
@@ -133,11 +154,21 @@ a{
     transform: scale(1);
     transition: 0.3s;
     color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .btn-box-3:hover{
     background-color: rgba(68, 131, 109, 0.8);
     color: white;
-    transform: scale(1.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+.btn-box-3:active{
+    background-color: rgb(68, 145, 118);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+    transition: all 0.1s ease-in-out;
 }
 ////////////////////////////////////////////
 .h1-home-product{

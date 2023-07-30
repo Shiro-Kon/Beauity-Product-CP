@@ -21,7 +21,8 @@
   color: white;
   opacity: 1;
 }
-.quantity-in-basket {
+//////////////////////////////////////////////
+.quantity-basket {
   display: flex;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.404);
@@ -35,7 +36,23 @@
   right: 60px;
   z-index: 10;
 }
+///////////////////////////////////////////////
+.quantity-favorite {
+  display: flex;
+  position: fixed;
+  background-color:rgba(215, 122, 122, 0.984);  width: 21px;
+  height: 21px;
+  font-size: 13px;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+  right: 125px;
+  z-index: 10;
+}
+//////////////////////////////////////
 
+///////////////////////////////////////
 .favorite {
   display: flex;
   margin-bottom: 1px;
@@ -47,7 +64,7 @@
   margin-bottom: 5px;
   z-index: 5;
 }
-
+////////////////////////////////
 .css-1y942vo-MuiButtonBase-root-MuiButton-root {
   border-radius: 10px;
 }
@@ -63,7 +80,7 @@ input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: none;
   appearance: none;
 }
-
+//////////////////////////////
 .search {
   display: flex;
   width: 250px;
