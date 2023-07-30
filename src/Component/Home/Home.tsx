@@ -1,4 +1,10 @@
-import { Box, Card, CardContent, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  CardContent,
+  Container,
+  Grid,
+} from "@mui/material";
 import "./Home.scss";
 import HomeProductList from "./HomeProductList";
 import BlogSwiper from "../Swiper/BlogSwiper";
@@ -6,13 +12,10 @@ import { Link } from "react-router-dom";
 
 type Props = {};
 
-
-
 const Home = (props: Props) => {
- 
   return (
     <>
-    <BlogSwiper/>
+      <BlogSwiper />
       <Grid
         sx={{
           width: "1400px",
@@ -140,23 +143,50 @@ const Home = (props: Props) => {
         <HomeProductList />
       </Container>
       <Container className="subscribe-wrapper">
-    
-        <Grid container  sx={{ marginTop: "150px", marginBottom: "50px",  border: "1px solid goldenrod"  }} spacing={1}>
-          <Grid item sx={{width: "100%", height: " 100%" ,}} xs={6}>
-            <h1 className="h1-subscribe">Subscribe for special deals & offers</h1>
-            
-              <Box sx={{ display: "flex", flexWrap: "wrap" }}>
-              <input type="text"  className="input-text" placeholder="Your Name"/>
-              <input type="email"  className="input-text" placeholder="Enter your Email here"/>
-              </Box>
-              <p className="p-subscribe">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
-              <button className="btn-subscribe">Subscribe</button>
-           
+        <Grid
+          container
+          sx={{
+            marginTop: "150px",
+            marginBottom: "50px",
+            border: "1px solid goldenrod",
+          }}
+          spacing={1}
+        >
+          <Grid item sx={{ width: "100%", height: " 100%" }} xs={6}>
+            <h1 className="h1-subscribe">
+              Subscribe for special deals & offers
+            </h1>
+
+            <Box sx={{ display: "flex", flexWrap: "wrap" }}>
+              <input
+                type="text"
+                className="input-text"
+                placeholder="Your Name"
+              />
+              <input
+                type="email"
+                className="input-text"
+                placeholder="Enter your Email here"
+              />
+            </Box>
+            <p className="p-subscribe">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt.
+            </p>
+            <button className="btn-subscribe">Subscribe</button>
           </Grid>
-          <Grid item sx={{width: "100%" , height: "100%", marginTop: "-8px", marginBottom: "-7px"}} xs={6}>
+          <Grid
+            item
+            sx={{
+              width: "100%",
+              height: "100%",
+              marginTop: "-8px",
+              marginBottom: "-7px",
+            }}
+            xs={6}
+          >
             <img width={"100%"} src="./images/img-subscribe.svg" alt="" />
           </Grid>
-
         </Grid>
       </Container>
     </>

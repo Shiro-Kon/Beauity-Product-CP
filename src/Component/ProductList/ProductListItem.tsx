@@ -1,10 +1,4 @@
-import {
-  Box,
-  Card,
-  CardContent,
-  Grid,
-  Rating,
-} from "@mui/material";
+import { Box, Card, CardContent, Grid, Rating } from "@mui/material";
 import "./ProductListItem.scss";
 import { useState } from "react";
 import Quantity from "../Quantity/Quantity";
@@ -131,5 +125,3 @@ const ProductListItem = ({
 };
 
 export default ProductListItem;
-
-

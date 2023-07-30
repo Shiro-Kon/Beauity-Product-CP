@@ -6,7 +6,7 @@ type Props = {};
 const Contacts = (props: Props) => {
   return (
     <main>
-        <ContactsList />
+      <ContactsList />
     </main>
   );
 };

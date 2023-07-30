@@ -1,15 +1,13 @@
-import { Card, CardContent, Grid } from "@mui/material"
-import BlogList from "../../Component/Blogs/BlogList"
+import BlogList from "../../Component/Blogs/BlogList";
 
-type Props = {}
+type Props = {};
 
 const Blog = (props: Props) => {
   return (
     <main>
-        <BlogList/>
+      <BlogList />
     </main>
+  );
+};
 
-    )
-}
-
-export default Blog
+export default Blog;

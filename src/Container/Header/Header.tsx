@@ -6,28 +6,26 @@ import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 
-
-
-type Props = {productsInCart: {
-  [id: number]: number
-}};
+type Props = {
+  productsInCart: {
+    [id: number]: number;
+  };
+};
 
 const Header = ({ productsInCart }: Props) => {
   return (
-    
-      <AppBar position="sticky">
-        <header className="galss-effect">
+    <AppBar position="sticky">
+      <header className="galss-effect">
         <Container>
           <Toolbar className="test">
-          <Typography  component="div" sx={{ flexGrow: 1 }}>  
-          <Logo />
-          </Typography >
-            <Menu  productsInCart={productsInCart} />
-            
+            <Typography component="div" sx={{ flexGrow: 1 }}>
+              <Logo />
+            </Typography>
+            <Menu productsInCart={productsInCart} />
           </Toolbar>
         </Container>
-        </header>
-        </AppBar>
+      </header>
+    </AppBar>
   );
 };
 

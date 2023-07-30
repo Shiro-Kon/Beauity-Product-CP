@@ -1,14 +1,12 @@
-
-.card-favorite{
- width: 300px;
- 
+.card-favorite {
+  width: 300px;
 }
 
-.row-card-favorite{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+.row-card-favorite {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }

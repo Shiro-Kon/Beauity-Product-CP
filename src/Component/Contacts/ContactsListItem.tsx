@@ -1,35 +1,30 @@
-import { Card, CardContent } from '@mui/material';
-import './ContactsListItem.scss'
+import { Card, CardContent } from "@mui/material";
+import "./ContactsListItem.scss";
 
 type Props = {
-    id: number;
-    title: string;
-    location: string;
-    victoria: string;
-    country: string;
-    check: string;
-    image: string;
+  id: number;
+  title: string;
+  location: string;
+  victoria: string;
+  country: string;
+  check: string;
+  image: string;
 };
 
 const ContatcsListItem = ({
-    id,
-    title,
-    location,
-    victoria,
-    country,
-    check,
-    image,
-
+  id,
+  title,
+  location,
+  victoria,
+  country,
+  check,
+  image,
 }: Props) => {
- 
-
- 
-
   return (
-    <Card className="contacts card"  variant="outlined">
+    <Card className="contacts card" variant="outlined">
       <CardContent>
         <div className="contacts-img">
-          <img src={image}  />
+          <img src={image} />
         </div>
         <div className="title-local">{title}</div>
         <div className="adress">
@@ -38,10 +33,8 @@ const ContatcsListItem = ({
           <p>{country}</p>
         </div>
         <div className="map-check">
-           <a href="#">{check}</a>
+          <a href="#">{check}</a>
         </div>
-        
-       
       </CardContent>
     </Card>
   );

@@ -4,7 +4,7 @@ import ProductListItem from "./ProductListItem";
 import ProductsArr from "../../utils/ProductArr";
 import { Link } from "react-router-dom";
 
-type Props = {addProductToCart: (id: number, count: number) => void};
+type Props = { addProductToCart: (id: number, count: number) => void };
 
 const ProductList = ({ addProductToCart }: Props) => {
   const [selectedType, setSelectedType] = useState<string | null>(null);
@@ -50,23 +50,35 @@ const ProductList = ({ addProductToCart }: Props) => {
         <button className="btn-filter" onClick={() => handleFilterClick(null)}>
           All
         </button>
-        <button className="btn-filter" onClick={() => handleFilterClick('Oil')}>
+        <button className="btn-filter" onClick={() => handleFilterClick("Oil")}>
           Oil
         </button>
-        <button className="btn-filter" onClick={() => handleFilterClick("Conditioner")}>
-        Conditioner
+        <button
+          className="btn-filter"
+          onClick={() => handleFilterClick("Conditioner")}
+        >
+          Conditioner
         </button>
-        <button className="btn-filter" onClick={() => handleFilterClick("Toilette")}>
-        Toilette
+        <button
+          className="btn-filter"
+          onClick={() => handleFilterClick("Toilette")}
+        >
+          Toilette
         </button>
         <button className="btn-filter" onClick={() => handleFilterClick("Gel")}>
-        Gel
+          Gel
         </button>
-        <button className="btn-filter" onClick={() => handleFilterClick("Cream")}>
-        Cream
+        <button
+          className="btn-filter"
+          onClick={() => handleFilterClick("Cream")}
+        >
+          Cream
         </button>
-        <button className="btn-filter" onClick={() => handleFilterClick("Toning")}>
-        Toning
+        <button
+          className="btn-filter"
+          onClick={() => handleFilterClick("Toning")}
+        >
+          Toning
         </button>
       </Typography>
 

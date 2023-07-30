@@ -1,12 +1,9 @@
 // BlogDetailsPage.tsx
-import { Link, Router, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import BlogArr from "../../../utils/BlogArr";
 import {
-  Box,
   Card,
   CardContent,
-  CardMedia,
-  Grid,
   Typography,
 } from "@mui/material";
 import "./BlogDetailsPage.scss";

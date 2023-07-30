@@ -80,7 +80,7 @@ const ContactsList = (props: Props) => {
               spacing={2}
               direction="column"
             >
-              <Grid item xs={4} sx={{marginBottom: '30px'}}>
+              <Grid item xs={4} sx={{ marginBottom: "30px" }}>
                 <Grid container spacing={2}>
                   <Grid item xs={4}>
                     <Avatar
@@ -102,7 +102,7 @@ const ContactsList = (props: Props) => {
                 </Grid>
               </Grid>
               <Grid item xs={4}>
-              <Grid container spacing={2}>
+                <Grid container spacing={2}>
                   <Grid item xs={4}>
                     <Avatar
                       alt="Remy Sharp"
@@ -111,8 +111,7 @@ const ContactsList = (props: Props) => {
                     />
                   </Grid>
                   <Grid item xs={8}>
-                    <h3 className="consultant-h3">Ashley Milan
-</h3>
+                    <h3 className="consultant-h3">Ashley Milan</h3>
                     <p>Co-founder, Consultant</p>
                     <p className="consultant-data">
                       <b>+61 (0) 3 8376 6284</b>

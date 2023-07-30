@@ -30,10 +30,10 @@ const BlogSwiper: React.FC = () => {
         type: "bullets",
         clickable: true,
       },
-      allowTouchMove: false, // Disable swiping with touch/mouse
+      allowTouchMove: false,
       autoplay: {
-        delay: 3000, // Set the delay between autoplay slides (in ms)
-        disableOnInteraction: false, // Autoplay will continue after user interactions
+        delay: 3000, 
+        disableOnInteraction: false, 
       },
       on: {
         slideChange: (swiper) => {

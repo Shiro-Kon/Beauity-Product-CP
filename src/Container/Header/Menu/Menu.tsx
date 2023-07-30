@@ -24,12 +24,11 @@ const Menu = ({ productsInCart }: Props) => {
           <img src="./images/favorite.png" className="favorite" />
         </MenuItem>
         <span className="quantity-favorite">{FavoriteCounter}</span>
-        
+
         <MenuItem to="/basket">
           <img src="./images/basket.png" className="basket" />
         </MenuItem>
         <span className="quantity-basket">
-          {""}
           {Object.keys(productsInCart).reduce(
             (count, productId) => count + productsInCart[parseInt(productId)],
             0
