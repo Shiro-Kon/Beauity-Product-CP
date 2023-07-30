@@ -1,5 +1,4 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { FavoriteSlice } from "./FavoriteReducer";
 
 type FavoriteCounterState = {
   FavoriteCounter: number;

@@ -21,12 +21,12 @@ const Menu = ({ productsInCart }: Props) => {
       <input className="search" type="search" placeholder="Search" />
       <div className="button-header">
         <MenuItem to="/favorite">
-          <img src="./images/favorite.png" className="favorite" />
+          <img src="./images/favorite.png" className="favorite"  alt="favote button page"/>
         </MenuItem>
         <span className="quantity-favorite">{FavoriteCounter}</span>
 
         <MenuItem to="/basket">
-          <img src="./images/basket.png" className="basket" />
+          <img src="./images/basket.png" className="basket" alt="basket button page"/>
         </MenuItem>
         <span className="quantity-basket">
           {Object.keys(productsInCart).reduce(

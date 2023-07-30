@@ -24,7 +24,7 @@ const ContatcsListItem = ({
     <Card className="contacts card" variant="outlined">
       <CardContent>
         <div className="contacts-img">
-          <img src={image} />
+          <img src={image} alt={title} />
         </div>
         <div className="title-local">{title}</div>
         <div className="adress">
@@ -33,7 +33,7 @@ const ContatcsListItem = ({
           <p>{country}</p>
         </div>
         <div className="map-check">
-          <a href="#">{check}</a>
+          <span >{check}</span>
         </div>
       </CardContent>
     </Card>

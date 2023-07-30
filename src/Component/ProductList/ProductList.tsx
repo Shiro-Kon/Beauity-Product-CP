@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Grid, Typography, Button } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import ProductListItem from "./ProductListItem";
 import ProductsArr from "../../utils/ProductArr";
 import { Link } from "react-router-dom";

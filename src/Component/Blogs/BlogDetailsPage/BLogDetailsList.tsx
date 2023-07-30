@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material"
+import { Grid} from "@mui/material"
 import BlogDetailsListItem from "./BlogDetailsListItem"
 import BlogDetalsArr from "../../../utils/BlogDetailsArr"
 

@@ -34,7 +34,7 @@ const ProductListItem = ({
 }: Props) => {
   const [count, setCount] = useState<number>(1);
   const [value, setValue] = useState<number | null>(4);
-  const [status, setStatus] = useState<number>(0);
+  const [status] = useState<number>(0);
 
   const isFavorite = useAppSelector((state) => state.productsFavoriteState[id]);
 
@@ -45,8 +45,7 @@ const ProductListItem = ({
       isFavorite
         ? dispath(removeProductFromFavorite({ id, status }))
         : dispath(addProductToFavorite({ id, status }));
-    }
-    {
+ 
       isFavorite ? dispath(FavoriteDecrement()) : dispath(FavoriteIncrement());
     }
   };
@@ -100,7 +99,10 @@ const ProductListItem = ({
           </Grid>
           <Grid item xs={2}>
             <button
-              onClick={() => (dispath(toggleFavorite(id)), FavoriteFun())}
+              onClick={() => { 
+                dispath(toggleFavorite(id))
+                 FavoriteFun()
+                }}
               className="product-favorite-btn"
             >
               {isFavorite ? (

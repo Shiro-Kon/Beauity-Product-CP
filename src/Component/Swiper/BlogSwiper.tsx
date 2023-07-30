@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
@@ -10,7 +10,7 @@ import "./BlogSwiper.scss";
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const BlogSwiper: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState<number>(0);
+  const [, setCurrentSlide] = useState<number>(0);
   const swiperRef = useRef<SwiperCore | null>(null);
 
   const handleSlideChange = (swiper: SwiperCore) => {

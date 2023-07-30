@@ -1,4 +1,4 @@
-import { Card, CardContent, Grid, Button } from "@mui/material";
+import { Card, CardContent, Grid } from "@mui/material";
 import { useContext } from "react";
 import { AppContext } from "../../Container/App/App";
 import { Product } from "../../utils/ProductArr";
@@ -28,13 +28,9 @@ const CartProductListItemExtended = ({ product, productCount }: Props) => {
             }
             minCount={0}
           />
-
-          <button
-            className="delete-btn"
-            onClick={() => data?.removeProductFromCart(product.id)}
-          >
-            Delete
-          </button>
+  <input type="button" value="Delete" className="delete-btn"
+            onClick={() => data?.removeProductFromCart(product.id)} />
+         
         </CardContent>
       </Card>
     </Grid>

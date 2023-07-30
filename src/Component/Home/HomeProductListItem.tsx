@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Rating, Typography } from "@mui/material";
+import { Box, Card, CardContent, Rating} from "@mui/material";
 import { useState } from "react";
 
 type Props = {
@@ -8,15 +8,14 @@ type Props = {
   image: string;
 };
 
-const HomeProductListItem = ({ id, title, price, image }: Props) => {
-  const [count, setCount] = useState<number>(1);
+const HomeProductListItem = ({  title, price, image }: Props) => {
   const [value, setValue] = useState<number | null>(2);
 
   return (
     <Card className="card">
       <CardContent sx={{ padding: 0, textAlign: "center" }}>
         <div>
-          <img width={"100%"} src={image} />
+          <img width={"100%"} src={image}  alt={title}/>
         </div>
         <h4 className="product-title">{title}</h4>
         <div className="text-family">

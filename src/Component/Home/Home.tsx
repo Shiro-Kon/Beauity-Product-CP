@@ -35,7 +35,7 @@ const Home = (props: Props) => {
                   className="img-zi-1"
                   width={"100%"}
                   src="./images/img-woman.svg"
-                  alt=""
+                  alt="woman with cosmetic"
                 />
                 <div className=" text-box">
                   10 quick tips for cosmetics care
@@ -85,7 +85,7 @@ const Home = (props: Props) => {
           <Grid item textAlign={"center"} xs={1.7}>
             <Card sx={{ backgroundColor: "#ece3e3ab" }}>
               <CardContent>
-                <img width={"100px"} src="./images/beauty.svg" />
+                <img width={"100px"} src="./images/beauty.svg" alt="imagescarts" />
               </CardContent>
               <div className="text-popular">Beauty</div>
             </Card>
@@ -93,7 +93,7 @@ const Home = (props: Props) => {
           <Grid item textAlign={"center"} xs={1.7}>
             <Card sx={{ backgroundColor: "#ece3e3ab" }}>
               <CardContent>
-                <img height={"100px"} src="./images/wrincles.svg" />
+                <img height={"100px"} src="./images/wrincles.svg" alt="imagescarts" />
               </CardContent>
               <div className="text-popular">Wrincles</div>
             </Card>
@@ -101,7 +101,7 @@ const Home = (props: Props) => {
           <Grid item textAlign={"center"} xs={1.7}>
             <Card sx={{ backgroundColor: "#ece3e3ab" }}>
               <CardContent>
-                <img width={"100px"} src="./images/dayCare.svg" />
+                <img width={"100px"} src="./images/dayCare.svg"  alt="imagescarts"/>
               </CardContent>
               <div className="text-popular">Day care</div>
             </Card>
@@ -109,7 +109,7 @@ const Home = (props: Props) => {
           <Grid item textAlign={"center"} xs={1.7}>
             <Card sx={{ backgroundColor: "#ece3e3ab" }}>
               <CardContent>
-                <img width={"100px"} src="./images/nightCare.svg" />
+                <img width={"100px"} src="./images/nightCare.svg"  alt="imagescarts"/>
               </CardContent>
               <div className="text-popular">Night care</div>
             </Card>
@@ -117,7 +117,7 @@ const Home = (props: Props) => {
           <Grid item textAlign={"center"} xs={1.7}>
             <Card sx={{ backgroundColor: "#ece3e3ab" }}>
               <CardContent>
-                <img height={"100px"} src="./images/moisture.svg" />
+                <img height={"100px"} src="./images/moisture.svg" alt="imagescarts" />
               </CardContent>
               <div className="text-popular">Moisture</div>
             </Card>
@@ -125,7 +125,7 @@ const Home = (props: Props) => {
           <Grid item textAlign={"center"} xs={1.7}>
             <Card sx={{ backgroundColor: "#ece3e3ab" }}>
               <CardContent>
-                <img height={"100px"} src="./images/protect.svg" />
+                <img height={"100px"} src="./images/protect.svg"  alt="imagescarts"/>
               </CardContent>
               <div className="text-popular">Protect</div>
             </Card>

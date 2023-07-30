@@ -1,4 +1,3 @@
-// BlogDetailsPage.tsx
 import {  useParams } from "react-router-dom";
 import BlogArr from "../../../utils/BlogArr";
 import {
