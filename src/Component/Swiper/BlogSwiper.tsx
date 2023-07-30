@@ -6,6 +6,7 @@ import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
 import BlogArr from "../../utils/BlogArr";
 import "./BlogSwiper.scss";
+import { Link } from "react-router-dom";
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -50,14 +51,13 @@ const BlogSwiper: React.FC = () => {
           {BlogArr.map((blog) => (
             <SwiperSlide key={blog.id}>
               <div className="box-swiper">
-                <a href="/blog">
-                  {" "}
+                <Link to={`/blog`}>
                   <img
                     className="img-swiper"
                     src={blog.image}
                     alt={blog.title}
                   />
-                </a>
+                </Link>
                 <h3 className="title-swiper">{blog.title}</h3>
               </div>
             </SwiperSlide>

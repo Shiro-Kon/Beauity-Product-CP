@@ -24,7 +24,7 @@
 //////////////////////////////////////////////
 .quantity-basket {
   display: flex;
-  position: fixed;
+  position: absolute;
   background-color: rgba(255, 255, 255, 0.404);
   width: 21px;
   height: 21px;
@@ -32,14 +32,13 @@
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  top: 5px;
-  right: 60px;
-  z-index: 10;
+  right: -80px;
+  bottom: 40px;
 }
 ///////////////////////////////////////////////
 .quantity-favorite {
   display: flex;
-  position: fixed;
+  position: absolute;
   background-color: rgba(215, 122, 122, 0.984);
   width: 21px;
   height: 21px;
@@ -47,9 +46,8 @@
   border-radius: 50px;
   justify-content: center;
   align-items: center;
-  top: 5px;
-  right: 125px;
-  z-index: 10;
+  right: -20px;
+  bottom: 40px;
 }
 //////////////////////////////////////
 
